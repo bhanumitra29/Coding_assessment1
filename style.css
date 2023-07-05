@@ -1,0 +1,93 @@
+body{
+    background-color: #004466;
+}
+
+.container{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 20vh;
+    left: 38%;
+}
+
+.circleimg{
+    position: absolute;
+    top: 10%;
+    left: -10%;
+    animation: movedown 6s ease-in-out infinite;
+}
+
+.astronautimg{
+    height: 400px;
+    width: 400px;
+   
+}
+
+@keyframes movedown{
+    0%, 100%{
+        top: 10%;
+    }
+    50%{
+        top: 15%;
+    }
+}
+
+.moon{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+}
+
+
+.moonimg{
+    height: 150px;
+    width: 150px;
+}
+
+.button{
+    border: white solid 2px;
+    background-color: #004466;
+    color: white;
+    padding: 15px;
+    font-size: x-large;
+    position: relative;
+    top: 15px;
+    /* right: -100px; */
+    left: 88vw;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 300px){
+    .button{
+        height: 50px;
+        width: 140px;
+        border: white solid 2px;
+        background-color: #004466;
+        color: white;
+        padding: 15px;
+        font-size: larger;
+        position: fixed;
+        top: 20px;
+        /* right: -100px; */
+        right: 20px;
+        transform: translate(-80%, -20%);
+    }
+
+    .container{
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .astronautimg{
+        height: 370px;
+        width: 370px;
+       
+    }
+}
